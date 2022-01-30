@@ -45,9 +45,9 @@ namespace ShopApp.Helpers
             _hipHop = new Genre() { Title = "Hip-Hop" };
             _jazz = new Genre() { Title = "Jazz" };
 
-            _night = new Song() { Title = "Night", Duration = 350, ReleasedDate = new DateTime(1995, 7, 20), Genre = _hipHop };
+            _night = new Song() { Title = "Night", Duration = 350, ReleasedDate = new DateTime(1992, 7, 20), Genre = _hipHop };
             _highLikeThis = new Song() { Title = "High Like This", Duration = 457, ReleasedDate = new DateTime(2011, 7, 20), Genre = _jazz };
-            _feel = new Song() { Title = "Feel", Duration = 365, ReleasedDate = new DateTime(2022, 7, 20), Genre = _altRock };
+            _feel = new Song() { Title = "Feel", Duration = 365, ReleasedDate = new DateTime(1955, 7, 20), Genre = _altRock };
             _problems = new Song() { Title = "Problems", Duration = 678, ReleasedDate = new DateTime(2003, 7, 20), Genre = _hipHop };
             _strangers = new Song() { Title = "Strangers", Duration = 240, ReleasedDate = new DateTime(1996, 7, 20), Genre = _pop };
         }

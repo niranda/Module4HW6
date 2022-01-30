@@ -16,7 +16,12 @@ namespace ShopApp.Main
             await using (var context = new ContextFactory().CreateDbContext(args))
             {
                 await new OnInitialize(context).Initialize();
+
                 await new Queries.Queries(context).FirstQuery();
+                Console.WriteLine();
+                await new Queries.Queries(context).SecondQuery();
+                Console.WriteLine();
+                await new Queries.Queries(context).ThirdQuery();
             }
         }
     }
