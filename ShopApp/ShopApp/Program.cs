@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using ShopApp.Helpers;
+using ShopApp.Queries;
 
 namespace ShopApp.Main
 {
@@ -15,6 +16,7 @@ namespace ShopApp.Main
             await using (var context = new ContextFactory().CreateDbContext(args))
             {
                 await new OnInitialize(context).Initialize();
+                await new Queries.Queries(context).FirstQuery();
             }
         }
     }
